@@ -1,0 +1,3 @@
+Coloque aqui as fotos: joanna1.jpg, joanna2.jpg, joanna3.jpg ...
+(aceita jpg, jpeg, png ou webp).
+Pratos: macarrao, pizza, hamburguer, lasanha, strogonoff, sushi.

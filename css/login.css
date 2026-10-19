@@ -1,0 +1,30 @@
+/* ===== LOGIN ===== */
+.login{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:120px 20px;background:radial-gradient(circle at 20% 10%,#ffe3ee,transparent 50%),radial-gradient(circle at 85% 90%,#fde9d9,transparent 50%),#fff7fa;position:relative;overflow:hidden}
+.colagem{position:absolute;width:84px;height:84px;border:4px solid #fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.18);animation:flutuar 6s ease-in-out infinite;z-index:0}
+.colagem img{width:100%;height:100%;object-fit:cover}
+.c1{top:16px;left:16px;--r:-6deg}
+.c2{top:16px;right:16px;--r:5deg;animation-delay:1.2s}
+.c3{bottom:16px;left:50%;margin-left:-42px;--r:-3deg;animation-delay:2.4s}
+@keyframes flutuar{0%,100%{transform:translateY(0) rotate(var(--r))}50%{transform:translateY(-10px) rotate(var(--r))}}
+.card{position:relative;z-index:1;width:100%;max-width:360px;padding:34px 26px 14px;background:#fff;border:1px solid var(--rosa-pastel);border-radius:20px;box-shadow:0 14px 40px rgba(232,121,159,.25);text-align:center}
+.card h1{font-size:2.5rem;font-style:italic;font-weight:600;color:var(--rosa-forte);margin-bottom:24px}
+.campo{text-align:left;margin-bottom:14px}
+.campo label{display:block;font-size:.8rem;font-weight:600;margin-bottom:5px}
+.campo input{width:100%;min-height:48px;padding:10px 14px;border:1.5px solid #ecdbe2;border-radius:12px;font:inherit;font-size:1rem;background:#fffafc;transition:var(--t)}
+.campo input:focus{outline:none;border-color:var(--rosa-forte);box-shadow:0 0 0 4px var(--rosa-pastel)}
+.senha{position:relative}
+.senha input{padding-right:52px}
+.senha button{position:absolute;right:2px;top:0;width:48px;height:48px;border:0;background:none;font-size:1.15rem;cursor:pointer}
+.card .btn{width:100%;margin-top:6px}
+#erro{min-height:1.4em;margin-top:12px;font-size:.85rem;color:#c0334f}
+#segredo{display:block;margin:6px auto 0;width:44px;height:44px;border:0;background:none;font-size:24px;line-height:1;opacity:.04;cursor:pointer;transition:opacity var(--t)}
+#segredo:hover,#segredo:focus-visible,#segredo:active{opacity:1}
+@media(min-width:600px){
+  .login{padding:60px 20px}
+  .colagem{width:130px;height:130px}.c3{margin-left:-65px}
+  .c1{top:28px;left:28px}.c2{top:28px;right:28px}.c3{bottom:28px}
+}
+@media(min-width:1024px){
+  .colagem{width:170px;height:170px}
+  .c1{top:8%;left:8%}.c2{top:8%;right:8%}.c3{left:auto;right:12%;bottom:10%;margin:0}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-protegida>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#E8799F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cardapio.css">
+  <title>Adicionais</title>
+  <script src="js/config.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/adicionais.js" defer></script>
+</head>
+
+<body>
+  <header class="topo"><a class="btn btn-sec btn-sm" href="home.html">← Cardápio</a>
+    <nav><button class="btn btn-sec btn-sm" data-sair>Sair</button></nav>
+  </header>
+  <section class="hero">
+    <h1>Quer incrementar?</h1>
+    <p>Escolha seus adicionais 😉</p><span class="ornamento"></span>
+  </section>
+  <main>
+    <div class="lista" id="lista"></div>
+    <section class="resumo" aria-live="polite">
+      <h3>Seu pedido</h3>
+      <ul id="itens"></ul>
+      <div class="total"><span>Total</span><span id="total"></span></div>
+      <div class="acoes"><button class="btn" id="finalizar">Finalizar pedido</button><a class="btn btn-sec"
+          href="home.html">Voltar ao cardápio</a></div>
+    </section>
+  </main>
+  <div id="obrigado" role="dialog" aria-modal="true">
+    <div>
+      <div class="grande">🍝💕</div>
+      <h2 id="ob-titulo"></h2>
+      <p id="ob-texto"></p><button class="btn" id="fechar">Fechar</button>
+    </div>
+  </div>
+</body>
+
+</html>
